@@ -1,10 +1,50 @@
-body {
+html {
     margin: 0;
 }
+body {
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    background-image: linear-gradient( to right, rgb(185, 113, 113), #F5CEAF);
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    padding: 30px;
+}
+  
+h1 {
+    color: white;
+    font-size: 2.75rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.buttons {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-left: 1em;
+} 
+.left {
+    margin: auto;
+    padding: 30px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 555px;
+    height:555px;
+    border: 2px solid black;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+}
+  
 .cell {
-    border: 1px solid rgb(66, 66, 47);
-    min-width: 20px;
-    min-height: 20px;
-    display: inline-block;
-    margin-right: 2px;
-  }
+    border: 1px solid black;
+}
+  
