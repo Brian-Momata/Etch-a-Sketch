@@ -13,10 +13,10 @@ body {
     flex-direction: column;
     flex: 0 0 auto;
     padding: 30px;
+    color: white;
 }
   
 h1 {
-    color: white;
     font-size: 2.75rem;
     font-weight: bolder;
     text-align: center;
@@ -27,6 +27,8 @@ h1 {
     flex-direction: column;
     gap: 1.5rem;
     padding-left: 1em;
+    font-weight: bold;
+    font-size: 1.5rem;
 } 
 .left {
     margin: auto;
@@ -46,5 +48,25 @@ h1 {
   
 .cell {
     border: 1px solid black;
+}
+.btn {
+    border-color: rgb(185, 113, 113);
+    padding: 4px;
+    font-size: 2.75rem;
+    border-radius: 8px;
+    cursor: pointer;
+    color: rgb(185, 113, 113);
+}
+button > * {
+    pointer-events: none;
+}
+#colorpicker {
+    border-radius: 8px;
+    background-color: rgb(185, 113, 113);
+    border: none;
+    cursor: pointer;
+}
+#myRange {
+    cursor: pointer;
 }
   

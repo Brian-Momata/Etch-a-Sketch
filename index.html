@@ -7,14 +7,15 @@
     <title>Etch A Sketch</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/54a2cd0953.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="header right">
         <h1>Etch A Sketch</h1>
         <div class="buttons">
-        <button>Random Color</button>
-        <button>Choose a Color</button>
-        <button>Select Pen Size</button>
+            <div><button class="btn" id="eraser"><i class="fa fa-eraser"></i></button></div>
+            <div><label for="colorpicker">Choose a Color: </label><input type="color" value="#000000" id="colorpicker"></div>
+            <div><label for="pensize">Select Pen Size: </label><input type="range" min="-100" max="-16" value="-16" class="slider" id="myRange"></div>
         </div>
     </div>
     <div class="left">
