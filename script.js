@@ -5,12 +5,12 @@ function createGrid(gridSize) {
   for (let rowCol = 0; rowCol < gridSize ** 2; rowCol++) {
     let gridCell = document.createElement("div");
     Object.assign(gridCell.style, {
-      height : `${(size / gridSize) - 2}px`,
-      width : `${(size / gridSize) - 2}px`
+      height : `${size / gridSize}px`,
+      width : `${size / gridSize}px`
     });
     gridCell.classList.add("cell");
     gridCell.addEventListener("mouseover", () => {
-      gridCell.style.backgroundColor = `${document.getElementById("colorpicker").value}`
+    gridCell.style.backgroundColor = `${document.getElementById("colorpicker").value}`
     })
     container.appendChild(gridCell);
   }
