@@ -9,6 +9,9 @@ function createGrid(gridSize) {
       width : `${(size / gridSize) - 2}px`
     });
     gridCell.classList.add("cell");
+    gridCell.addEventListener("mouseover", () => {
+      gridCell.style.backgroundColor = `${document.getElementById("colorpicker").value}`
+    })
     container.appendChild(gridCell);
   }
 }
