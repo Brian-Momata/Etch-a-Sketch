@@ -6,7 +6,7 @@ body {
     width: 100%;
     display: flex;
     margin: 0;
-    background-image: linear-gradient( to right, rgb(185, 113, 113), #F5CEAF);
+    background-color: #762e2e;
 }
 .header {
     display: flex;
@@ -20,15 +20,23 @@ h1 {
     font-size: 2.75rem;
     font-weight: bolder;
     text-align: center;
+    border-radius: 50px;
+    background: #762e2e;
+    box-shadow:  20px 20px 33px #642727,
+                -20px -20px 33px #883535;
 }
 .buttons {
     margin-top: auto;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding-left: 1em;
+    padding: 1.5em;
     font-weight: bold;
     font-size: 1.5rem;
+    border-radius: 50px;
+    background: #762e2e;
+    box-shadow:  20px 20px 33px #642727,
+                -20px -20px 33px #883535;
 } 
 .left {
     margin: auto;
@@ -40,29 +48,35 @@ h1 {
     flex-wrap: wrap;
     width: 555px;
     height:555px;
-    border: 2px solid black;
     margin: 0 auto;
-    background-color: white;
     border-radius: 5px;
+    background: whitesmoke;
+    box-shadow: -33px -33px 76px #501f1f,
+                33px 33px 76px #9c3d3d;
 }
 .btn {
-    border-color: rgb(185, 113, 113);
-    padding: 4px;
+    border: none;
+    padding: 0.5em;
     font-size: 2.75rem;
-    border-radius: 8px;
     cursor: pointer;
-    color: rgb(185, 113, 113);
+    color: whitesmoke;
+    border-radius: 17px;
+    background: #762e2e;
+    box-shadow: inset 16px 16px 31px #642727,
+                inset -16px -16px 31px #883535;
+    transition: 0.4ms;
+}
+.btn:hover {
+    color: #883535;
+    background-color: whitesmoke;
+}
+.btn:active {
+    transform: translateY(3px);
 }
 button > * {
     pointer-events: none;
 }
-#colorpicker {
-    border-radius: 8px;
-    background-color: rgb(185, 113, 113);
-    border: none;
-    cursor: pointer;
-}
-#myRange {
+#colorpicker, #myRange {
     cursor: pointer;
 }
   
