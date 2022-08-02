@@ -16,6 +16,11 @@ function createGrid(gridSize) {
   }
 }
 
-window.onload = function() {
-  createGrid(32);
+function resetBoard() {
+  let cells = container.querySelectorAll(".cell");
+  cells.forEach((div) => {
+    div.style.backgroundColor = "white";
+  })
 }
+let gridSize = prompt("choose a grid size", 16);
+createGrid(Number(gridSize));
