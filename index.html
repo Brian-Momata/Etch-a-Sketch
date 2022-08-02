@@ -13,9 +13,8 @@
     <div class="header right">
         <h1>Etch A Sketch</h1>
         <div class="buttons">
-            <div><button class="btn" id="eraser"><i class="fa fa-eraser"></i></button></div>
-            <div><label for="colorpicker">Choose a Color: </label><input type="color" value="#000000" id="colorpicker"></div>
-            <div><label for="pensize">Select Pen Size: </label><input type="range" min="-100" max="-16" value="-16" class="pensize" id="myRange"></div>
+            <div><button class="btn" id="eraser" onclick=resetBoard()><i class="fa fa-eraser"></i></button></div>
+            <div><label for="colorpicker" class="color-picker">Choose a Color: </label><input type="color" value="#000000" id="colorpicker"></div>
         </div>
     </div>
     <div class="left">
