@@ -15,11 +15,11 @@ body {
     padding: 30px;
     color: white;
 }
-  
 h1 {
     font-size: 2.75rem;
     font-weight: bolder;
     text-align: center;
+    padding: 0.5em;
     border-radius: 50px;
     background: #762e2e;
     box-shadow:  20px 20px 33px #642727,
@@ -31,12 +31,6 @@ h1 {
     flex-direction: column;
     gap: 1.5rem;
     padding: 1.5em;
-    font-weight: bold;
-    font-size: 1.5rem;
-    border-radius: 50px;
-    background: #762e2e;
-    box-shadow:  20px 20px 33px #642727,
-                -20px -20px 33px #883535;
 } 
 .left {
     margin: auto;
@@ -50,7 +44,7 @@ h1 {
     height:555px;
     margin: 0 auto;
     border-radius: 5px;
-    background: whitesmoke;
+    background: white;
     box-shadow: -33px -33px 76px #501f1f,
                 33px 33px 76px #9c3d3d;
 }
@@ -59,24 +53,40 @@ h1 {
     padding: 0.5em;
     font-size: 2.75rem;
     cursor: pointer;
-    color: whitesmoke;
+    color: white;
     border-radius: 17px;
-    background: #762e2e;
-    box-shadow: inset 16px 16px 31px #642727,
-                inset -16px -16px 31px #883535;
+    background: linear-gradient(145deg, #7e3131, #6a2929);
+    box-shadow:  20px 20px 60px #572222,
+                -20px -20px 60px #953a3a;
     transition: 0.4ms;
 }
 .btn:hover {
-    color: #883535;
-    background-color: whitesmoke;
+    background: whitesmoke;
+    color: #762e2e;
 }
 .btn:active {
     transform: translateY(3px);
+    background: #762e2e;
+    color: white;
+    box-shadow: inset 20px 20px 60px #572222,
+                inset -20px -20px 60px #953a3a;
+}
+.color-picker {
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 17px;
+    background: linear-gradient(145deg, #7e3131, #6a2929);
+    box-shadow:  20px 20px 50px #572222,
+                -20px -20px 50px #953a3a;
 }
 button > * {
     pointer-events: none;
 }
-#colorpicker, #myRange {
+#colorpicker {
     cursor: pointer;
 }
   
